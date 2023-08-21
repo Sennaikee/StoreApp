@@ -65,7 +65,7 @@ const SingleProduct = () => {
                 </button>
                 <h2 style={{ fontSize: "40px" }}>{increase}</h2>
                 <button
-                  disabled={increase == 3}
+                  disabled={increase === 3}
                   onClick={() => {
                     setIncrease(increase + 1);
                   }}

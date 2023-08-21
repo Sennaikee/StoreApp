@@ -1,6 +1,6 @@
 import { useNavigate, Link } from "react-router-dom";
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { app,auth } from "../firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../firebase";
 const LogIn = () => {
   const navigate = useNavigate(); 
    

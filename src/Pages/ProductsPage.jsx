@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useState } from "react";
 import Products from "../Components/Products";
 import { Slider } from "@mui/material";
@@ -78,17 +78,17 @@ const ProductPage = ({ content }) => {
   }
 
 
-  const itemsPerPage = 6;
-  const [currentPage, setCurrentPage] = useState(1); 
+  // const itemsPerPage = 6;
+  // const [currentPage, setCurrentPage] = useState(1); 
 
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  const itemsToShow = content.slice(startIndex, endIndex);
-  const totalPages = Math.ceil(content.length / itemsPerPage);
+  // const startIndex = (currentPage - 1) * itemsPerPage;
+  // const endIndex = startIndex + itemsPerPage;
+  // const itemsToShow = content.slice(startIndex, endIndex);
+  // const totalPages = Math.ceil(content.length / itemsPerPage);
 
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-  };
+  // const handlePageChange = (page) => {
+  //   setCurrentPage(page);
+  // };
 
   return (
     <>
